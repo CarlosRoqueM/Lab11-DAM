@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab11.Views.Sueldo">
+    <ContentPage.Content>
+        <StackLayout Padding="50">
+            <Entry Placeholder="Sueldo base" Text="{Binding Sueldo}" BackgroundColor="Black"></Entry>
+            <Entry Placeholder="Gratificacion" Text="{Binding Gratificacion}"/>
+            <Entry Placeholder="Descuento" Text="{Binding Descuento}"/>
+            <Button BackgroundColor="DarkBlue" Text="Calcular" Command="{Binding CalcularSueldoNeto}"/>
+            <Button Text="Calcular impuestos" Command="{Binding CalcularImpuesto}"/>
+            <Button Text="CAlcular Sueldo Neto Final" Command="{Binding CalcularSueldoNetoFinal}"/> 
+            <Label Text="{Binding SueldoNeto}"/>
+            <Label Text="{Binding Impuesto}"/>
+            <Label Text="{Binding SueldoNetoFinal}"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
